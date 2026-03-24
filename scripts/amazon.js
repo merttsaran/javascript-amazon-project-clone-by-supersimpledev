@@ -24,12 +24,14 @@ const products = [{
   priceCents: 799
 }];
 
+let productsHTML = '';
+
 products.forEach((product) => {
-  const html = `
+  productsHTML += `
     <div class="product-container">
       <div class="product-image-container">
         <img class="product-image"
-          src="${product.image}">
+          src="${product.images}">
       </div>
 
       <div class="product-name limit-text-to-2-lines">
@@ -76,4 +78,8 @@ products.forEach((product) => {
     </div>
   `;
 });
+
+console.log(productsHTML);
+
+document.querySelector('.js-products-grid').innerHTML = productsHTML;
 
