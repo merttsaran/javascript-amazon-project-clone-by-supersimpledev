@@ -656,5 +656,20 @@ const products = [
       "apparel",
       "mens"
     ]
+  },
+  {
+    id: "id123",
+    image: "images/products/backpack.jpg",
+    name: "GymShark Backpack",
+    rating: {
+      stars: 5,
+      count: 10050
+    },
+    priceCents: 4500,
+    keywords: [
+      "backpack",
+      "bag",
+      "pack"
+    ]
   }
 ];
