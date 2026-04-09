@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script type="module">
+      import dayjs from 'https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js';
+
+      function isWeekend(date1) {
+        const dayOfWeek = date1.format('dddd');
+        return dayOfWeek === 'Saturday' || dayOfWeek === 'Sunday';
+      }
+
+        let date1 = dayjs();
+        console.log(date1.format('dddd, MMMM D'));
+        console.log(isWeekend(date1));
+      
+    </script>
+  </body>
+</html>
