@@ -96,6 +96,10 @@ export function updateDeliveryOption(productId, newDeliveryOptionId) {
       matchingItem = cartItem;
     }
   });
+  
+  if(!matchingItem) {
+    return;
+  }
 
   matchingItem.deliveryOptionId = newDeliveryOptionId;
 
